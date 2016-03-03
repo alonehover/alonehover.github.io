@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+        <title>alonehover</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <h1>Angular Api </h1>
+            </div>
+        </header>
+
+        <div class="container">
+            <section id="main_content" class="highlight">
+				<table class="sr td-angular" border="0">
+					<tr>
+						<td colspan="2"><h3>function</h3></td>
+					</tr>
+					<tr>
+						<td>angular.bind(self, fn, args);</td>
+						<td>数据绑定 ，作用同 --> {{}}</td>
+					</tr>
+					<tr>
+						<td>angular.bootstrap(element, [modules], [config]);</td>
+						<td>手动启动angular</td>
+					</tr>
+					<tr>
+						<td>angular.copy(source, [destination]);</td>
+						<td>数组或对象深度拷贝</td>
+					</tr>
+					<tr>
+						<td>angular.element(element);</td>
+						<td>包裹着一部分DOM element或者是HTML字符串，把它作为一个jQuery元素来处理。</td>
+					</tr>
+					<tr>
+						<td>angular.equals(o1, o2);</td>
+						<td>如果两个对象相等返回 true</td>
+					</tr>
+					<tr>
+						<td>angular.extend(dst, src);</td>
+						<td>复制src对象中的属性去dst对象中. 支持多个src对象. 如果你不想改变一个对象，你可以把dst设为空对象{}: var object = angular.extend({}, object1, object2). 注意: angular.extend不支持递归复制.</td>
+					</tr>
+					<tr>
+						<td>angular.forEach(obj, iterator, [context]);</td>
+						<td>循环对obj对象的每个元素调用iterator, obj对象可以是一个Object或一个Array. Iterator函数调用方法: iterator(value, key, obj), 其中obj是被迭代对象，key是obj的property key或者是数组的index，value就是相应的值啦. (此函数不能够迭代继承的属性.)</td>
+					</tr>
+					<tr>
+						<td>angular.fromJson(json);</td>
+						<td>反序列化JSON字符串。</td>
+					</tr>
+					<tr>
+						<td>angular.identity(value);</td>
+						<td>函数返回本身的第一个参数。这个函数一般用于函数风格。</td>
+					</tr>
+					<tr>
+						<td>angular.injector(modules, [strictDi]);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isArray(value);</td>
+						<td>如果引用的是数组返回 true</td>
+					</tr>
+					<tr>
+						<td>angular.isDate(value);</td>
+						<td>如果引用的是日期返回 true</td>
+					</tr>
+					<tr>
+						<td>angular.isDefined(value);</td>
+						<td>如果引用的已定义返回 true</td>
+					</tr>
+					<tr>
+						<td>angular.isElement(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isFunction(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isNumber(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isObject(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isString(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.isUndefined(value);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.lowercase(string);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.module(name, [requires], [configFn]);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.noop();</td>
+						<td>一个不执行任何操作的空函数。这个函数一般用于函数风格。</td>
+					</tr>
+					<tr>
+						<td>angular.toJson(obj, pretty);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>angular.uppercase(string);</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2"><h3>Directive</h3></td>
+					</tr>
+					<tr>
+						<td>ng-app</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-bind</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-bind-html</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-bind-template</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-blur</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-change</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-checked</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-class</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-class-even</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-class-odd</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-click</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-cloak</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-controller</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-copy</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-csp</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-cut</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-dblclick</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-disabled</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-focus</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-form</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-hide</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-href</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-if</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-include</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-init</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-keydown</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-keypress</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-keyup</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-list</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-model</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-model-options</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mousedown</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mouseenter</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mouseleave</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mousemove</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mouseover</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-mouseup</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-non-bindable</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-open</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-paste</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-pluralize</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-readonly</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-repeat</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-selected</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-show</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-src</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-srcset</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-style</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-submit</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-switch</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-transclude</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>ng-value</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2"><h3>Object</h3></td>
+					</tr>
+					<tr>
+						<td>angular.version</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2"><h3>Type</h3></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					tr*10>td*2
+				</table>
+            </section>
+        </div>
+
+    </body>
+</html>
