@@ -45,3 +45,56 @@
 8. 检查app是否安装了 ``` cordova-plugin-whitelist ``` 插件，如果没有安装
 
         cordova plugin add cordova-plugin-whitelist
+
+9. 调用插件
+
+        codePush.sync();
+
+or
+
+        document.addEventListener("resume", function () {
+            codePush.sync();
+        });
+
+10. code-push 相关命令
+
+        列出 登陆的token    
+        code-push access-key ls
+        删除某个access-key
+        code-push access-key rm <accessKey>
+
+        code-push app ls
+
+        更名
+        code-push app rename 旧名字 新名字
+        删除
+        code-push app rm 名字
+
+        部署管理
+        上面的部署类型 Production  Staging，还可以自己加例如dev  alpha beta等，
+        code-push deployment add <app名字> <部署名字>
+        还可以重命名部署名字：
+        code-push deployment rename <app名字> <旧部署名字> <新部署名字>
+        删除部署名字  
+        code-push deployment rm <app名字> <部署名字>
+        列表部署名字
+        code-push deployment ls <app名字>
+
+        code-push release-cordova <appName> <platform>
+        eg.
+        code-push release-cordova MyApp-ios ios
+        code-push release-cordova MyApp-Android android
+
+        # Release a mandatory update with a changelog
+        code-push release-cordova MyApp-ios ios -m --description "Modified the header color"
+
+        # Release a dev Android build to just 1/4 of your end users
+        code-push release-cordova MyApp-Android android --rollout 25%
+
+        # Release an update that targets users running any 1.1.* binary, as opposed to
+        # limiting the update to exact version name in the config.xml file
+        code-push release-cordova MyApp-Android android --targetBinaryVersion "~1.1.0"
+
+        # Release the update now but mark it as disabled
+        # so that no users can download it yet
+        code-push release-cordova MyApp-ios ios -x
